@@ -1,7 +1,7 @@
 use thiserror::Error;
 
 pub trait IntoRepr<T> {
-    fn into_repr(self) -> T;
+    fn into_repr(&self) -> T;
 }
 
 pub trait FromRepr<T> {
