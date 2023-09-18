@@ -13,5 +13,5 @@ pub trait FromRepr<T> {
 #[derive(Error, Debug, PartialEq)]
 pub enum FromReprError<T> {
     #[error("Invalid variant `{0}`")]
-    InvalidVariant(T)
+    InvalidVariant(T),
 }
